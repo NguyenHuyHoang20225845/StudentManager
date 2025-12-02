@@ -1,7 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    // Remove version - let it be resolved from the classpath
+    id("kotlin-parcelize")  // Change this line
 }
+
 
 android {
     namespace = "com.example.studentmanager"
