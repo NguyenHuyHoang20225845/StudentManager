@@ -1,6 +1,12 @@
 package com.example.studentmanager
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class Student(
+    var mssv: String,
     var name: String,
-    var mssv: String
-)
+    var phone: String,
+    var address: String
+) : Parcelable
